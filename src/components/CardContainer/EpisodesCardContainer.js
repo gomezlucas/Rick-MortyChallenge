@@ -9,7 +9,7 @@ import FilterEpisode  from '../filter/FilterEpisode'
 
 function EpisodesCardContainer({ fetching, showModal, episodes, episode, closeModal }) {
     return (
-        <div className="mx-4">
+        <div className="mx-4  flex-grow-1">
             <ModalEpi
                 show={showModal}
                 episode={episode}

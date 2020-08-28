@@ -9,7 +9,7 @@ import { closeModal } from '../../redux/charactersDuck'
 function CardContainer({ characters, closeModal, character, showModal, fetching }) {
 
     return (
-        <div className="mx-4 ">
+        <div className="mx-4  flex-grow-1">
             <ModalChar
                 show={showModal}
                 character={character}

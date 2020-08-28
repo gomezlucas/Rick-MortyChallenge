@@ -8,7 +8,7 @@ import FilterLocation from './../filter/FilterLocation';
 
 function LocationCardContainer({ locations, closeModal,  location, showModal, fetching }) {
      return (
-        <div className="mx-4 ">
+        <div className="mx-4  flex-grow-1">
              <ModalLoc
                 show={showModal}
                 location={location}
