@@ -1,0 +1,15 @@
+footer{
+    background-color: #202329;
+    color: #FFFFFF;
+
+}
+
+footer a{
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #ff9800;
+
+}

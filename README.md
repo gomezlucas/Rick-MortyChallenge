@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CHALLENGE REACT -  OF RICK & MORTY:
+### ReactJS, Redux, GraphQl
 
-## Available Scripts
 
-In the project directory, you can run:
+The challenge consists of a web application with 3 searchers, one for the characters, one for locations and one for the episodes. As the user writes in one of the searches, a container has to be filled with data obtained from the API, as personal decision the results are loaded after the page is loaded and then when the user writes in one of the filters the results are filtered.  
+The searchers  includes a button to reset the search and the main container.
+The search can be done by name or type (in Characters and Locations Pages), which are entity attributes, for this reason, I add an radio input for those properties. 
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Data is shown in the search:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+| Characters | Locations | Episodes |
+| ------ | ------ | ------ |
+| Name | Name  | Name 
+| Image | Dimension | Episode
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### When an user clicks on one item, a modal is shown with detailed information about each entity and show: 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Characters | Locations | Episodes |
+| ------ | ------ | ------ |
+| Name | Name  | Name 
+| Type | Type | Release Date
+| Gender | Dimension | Episode
+| Species | Five first Residents | Five first Characters
+| Image |  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Screens: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Characters
 
-### `yarn eject`
+ ![Characters Screen]("./public/readMeImages/characterScreen.png") 
+ ![Characters Modal]("./public/readMeImages/characterModal.png") 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Episodes 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ ![Episodes Screen](./public/readMeImages/episodesScreen.png) 
+ ![Episodes Modal]("./public/readMeImages/episodesModal.png") 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ #### Locations 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ ![Episodes Screen](./public/readMeImages/locationScreen.png) 
+ ![Episodes Modal]("./public/readMeImages/locationModal.png") 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* To use this project, fork and clone this repository.
+* Install all the dependencies I have used with  yarn install
+* Run  yarn start

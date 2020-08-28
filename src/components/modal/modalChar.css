@@ -1,0 +1,21 @@
+.modal__button{
+    text-transform: uppercase;
+   text-align: center;
+   font-weight: 700;
+   color: rgb(51, 51, 51);
+   margin: 0px;
+   border-radius: 0.5rem;
+    border-width: 1px;
+   border-style: solid;
+   border-color: rgb(255, 152, 0);
+   border-image: initial;
+   background: transparent;
+}
+
+
+.modal__button:hover{
+   color: #ffffff;
+   background:  rgb(255, 152, 0);
+
+   
+}

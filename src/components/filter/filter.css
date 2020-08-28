@@ -1,0 +1,43 @@
+
+
+ 
+input[type="text"]{
+    border-radius:0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+input[type="text"]:focus{
+    border-color: rgb(255, 152, 0);
+    box-shadow:  0 0 8px #ff990065;
+    outline: 0 none;
+}
+
+.btn:focus{
+    box-shadow:  0 0 8px #ff990065;
+    border-color: rgb(255, 152, 0);
+    outline: 0 none;
+    border-width: 2px;
+
+}
+
+.filter__button{
+     text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    margin: 0px;
+    border-radius: 0.5rem;
+     border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 152, 0);
+    border-image: initial;
+    background: transparent;
+}
+
+
+.filter__button:hover{
+    color: #ffffff;
+    background:  rgb(255, 152, 0);
+
+
+}
