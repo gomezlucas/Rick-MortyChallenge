@@ -30,18 +30,18 @@ The search can be done by name or type (in Characters and Locations Pages), whic
 
 #### Characters
 
- ![Characters Screen]("./public/readMeImages/characterScreen.png") 
- ![Characters Modal]("./public/readMeImages/characterModal.png") 
+ ![Characters Screen](./public/readMeImages/characterScreen.png) 
+ ![Characters Modal](./public/readMeImages/characterModal.png) 
 
 #### Episodes 
 
  ![Episodes Screen](./public/readMeImages/episodesScreen.png) 
- ![Episodes Modal]("./public/readMeImages/episodesModal.png") 
+ ![Episodes Modal](./public/readMeImages/episodesModal.png) 
 
  #### Locations 
 
  ![Episodes Screen](./public/readMeImages/locationScreen.png) 
- ![Episodes Modal]("./public/readMeImages/locationModal.png") 
+ ![Episodes Modal](./public/readMeImages/locationModal.png) 
 
 
 ### Installation
