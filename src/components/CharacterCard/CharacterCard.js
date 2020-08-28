@@ -8,8 +8,8 @@ function CharacterCard({ image, name, id, getCharacterAction}) {
         <div className="col-12 col-sm-6 col-md-4 col-lg-3 characterCard" key={id}>
             <button className="mb-4" onClick={()=> getCharacterAction(id)} >
                 <div className="card" >
-                    <img src={image} class="card-img-top" alt={name} />
-                    <div class="card-body">
+                    <img src={image} className="card-img-top" alt={name} />
+                    <div className="card-body">
                         <p className="card-text"> {name}</p>
                     </div>
                 </div>

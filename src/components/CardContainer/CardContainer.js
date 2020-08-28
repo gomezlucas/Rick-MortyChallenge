@@ -28,9 +28,9 @@ function CardContainer({ characters, closeModal, character, showModal, fetching 
                                         </h3>
                                     </div>
                                     :
-                                    characters.map(char => {
+                                    characters.map((char, index) => {
                                         return (
-                                            < CharacterCard  {...char} />
+                                            < CharacterCard key={index}  {...char} />
                                         )
 
                                     })}

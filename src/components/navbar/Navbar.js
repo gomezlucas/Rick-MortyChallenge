@@ -27,43 +27,43 @@ function Navbar({radio, updateRadiosAction}) {
           <ul className='nav-menu-items mt-5'>
                         
              <li>
-              <div class="form-check">
+              <div className="form-check">
                 <input type="radio"
                   id="navbar__characters"
-                  class="form-check-input"
+                  className="form-check-input"
                   name="radioType"
                   value="characters"
                   checked={radio === "characters" ? true : false}
                   onChange={()=> updateRadiosAction("characters")}
                  />
-                <label class="form-check-label  mb-3" for="navbar__characters"> Characters </label>
+                <label className="form-check-label  mb-3" htmlFor="navbar__characters"> Characters </label>
               </div>
 
             </li>
             <li>
-            <div class="form-check">
+            <div className="form-check">
                 <input type="radio"
                   id="navbar__episodes"
-                  class="form-check-input"
+                  className="form-check-input"
                   name="radioType"
                   checked={radio === "episodes" ? true : false}
                   onChange={()=> updateRadiosAction("episodes")}
                   value="episodes"
                 />
-                <label class="form-check-label  mb-3" for="navbar__episodes"> Episodes </label>
+                <label className="form-check-label  mb-3" htmlFor="navbar__episodes"> Episodes </label>
               </div>
               </li>
             <li>
-            <div class="form-check">
+            <div className="form-check">
                 <input type="radio"
                   id="navbar__locations"
-                  class="form-check-input"
+                  className="form-check-input"
                   name="radioType"
                   checked={radio === "locations" ? true : false}
                   onChange={()=> updateRadiosAction("locations")}
                   value="locations"
                 />
-                <label class="form-check-label  mb-3" for="navbar__locations"> Locations </label>
+                <label className="form-check-label  mb-3" htmlFor="navbar__locations"> Locations </label>
               </div>
               </li>
           </ul>

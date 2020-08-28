@@ -23,9 +23,9 @@ function Filter({ radioInput, handleChangeFilterAction, handleRadioInput }) {
   return (
 
     <form className="my-5">
-      <div class="form-row justify-content-between align-items-center">
-        <div class="col-12 col-md-10">
-          <label class="sr-only" for="inlineFormInput">Name</label>
+      <div className="form-row justify-content-between align-items-center">
+        <div className="col-12 col-md-10">
+          <label className="sr-only" htmlFor="inlineFormInput">Name</label>
           <input type="text"
             className="form-control mb-2"
             id="inlineFormInput"
@@ -41,31 +41,31 @@ function Filter({ radioInput, handleChangeFilterAction, handleRadioInput }) {
         </div>
       </div>
 
-      <div class="form-check form-check-inline">
+      <div className="form-check form-check-inline">
 
         <input type="radio"
           id="radioCharacter"
-          class="form-check-input"
+          className="form-check-input"
           name="radioType"
           checked={radioInput === "name" ? true : false}
           onChange={(e) =>
             onCheckChange(e)}
           value="name"
         />
-        <label class="form-check-label" for="radioCharacter"> Character </label>
+        <label className="form-check-label" htmlFor="radioCharacter"> Character </label>
 
       </div>
-      <div class="form-check form-check-inline">
+      <div className="form-check form-check-inline">
 
         <input type="radio"
           id="radioType"
-          class="form-check-input"
+          className="form-check-input"
           name="radioType"
           checked={radioInput === "type" ? true : false}
           onChange={(e) => onCheckChange(e)}
           value="type"
         />
-        <label class="form-check-label" for="radioType"> Type </label>
+        <label className="form-check-label" htmlFor="radioType"> Type </label>
       </div>
     </form>
   )
