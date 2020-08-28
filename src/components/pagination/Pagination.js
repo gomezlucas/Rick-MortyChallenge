@@ -38,6 +38,8 @@ function Pagination({
       nextPage = nextPageLoc
       pageClickFunction = handleLocPageClickAction
       break
+    default:
+      break
   }
 
   let currentPage = nextPage - 1

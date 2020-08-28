@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+ import './App.css';
 import CardContainer from './components/CardContainer/CardContainer';
 import EpisodesCardContainer from './components/CardContainer/EpisodesCardContainer'
 import LocationsCardContainer from './components/CardContainer/LocationsCardContainer'

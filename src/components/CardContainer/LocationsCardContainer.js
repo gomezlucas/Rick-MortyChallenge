@@ -2,8 +2,7 @@ import React from 'react'
 import LocationCard from './../LocationCard/LocationCard';
 import { connect } from 'react-redux'
 import Pagination from './../pagination/Pagination';
-import Filter from '../filter/Filter'
-import ModalLoc from './../modal/ModalLoc';
+ import ModalLoc from './../modal/ModalLoc';
 import { closeModal } from '../../redux/locationsDuck'
 import FilterLocation from './../filter/FilterLocation';
 
