@@ -47,7 +47,7 @@ function FilterLocation({ radioInput, handleChangeFilterAction, handleRadioInput
           id="radioCharacter"
           class="form-check-input"
           name="radioType"
-          checked={radioInput === "name" ? true : false}
+          checked={radioInput === "name"}
           onChange={(e) => onCheckChange(e)}
           value="name"
         />
