@@ -16,7 +16,7 @@ function Card(props) {
                 </>
             )
         } else {
-            return (<div class="card-body">
+            return (<div className="card-body">
                 <p className="card-text"> {name}</p>
                 <p className="font-weight-normal"> {data}</p>
             </div>)

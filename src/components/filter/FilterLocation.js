@@ -23,9 +23,9 @@ function FilterLocation({ radioInput, handleChangeFilterAction, handleRadioInput
   return (
 
     <form className="my-5">
-      <div class="form-row justify-content-between align-items-center">
-        <div class="col-12 col-md-10">
-          <label class="sr-only" for="locationInput">Name</label>
+      <div className="form-row justify-content-between align-items-center">
+        <div className="col-12 col-md-10">
+          <label className="sr-only" htmlFor="locationInput">Name</label>
           <input type="text"
             className="form-control mb-2"
             id="locationInput"
@@ -41,30 +41,30 @@ function FilterLocation({ radioInput, handleChangeFilterAction, handleRadioInput
         </div>
       </div>
 
-      <div class="form-check form-check-inline">
+      <div className="form-check form-check-inline">
 
         <input type="radio"
           id="radioCharacter"
-          class="form-check-input"
+          className="form-check-input"
           name="radioType"
           checked={radioInput === "name"}
           onChange={(e) => onCheckChange(e)}
           value="name"
         />
-        <label class="form-check-label" for="radioCharacter"> Location </label>
+        <label className="form-check-label" htmlFor="radioCharacter"> Location </label>
 
       </div>
-      <div class="form-check form-check-inline">
+      <div className="form-check form-check-inline">
 
         <input type="radio"
           id="radioTypes"
-          class="form-check-input"
+          className="form-check-input"
           name="radioType"
           checked={radioInput === "type" ? true : false}
           onChange={(e) => onCheckChange(e) }
           value="type"
         />
-        <label class="form-check-label" for="radioTypes"> Type </label>
+        <label className="form-check-label" htmlFor="radioTypes"> Type </label>
       </div>
     </form>
   )

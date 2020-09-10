@@ -15,9 +15,9 @@ function Filter({ handleChangeFilterAction }) {
   return (
 
     <form className="my-5">
-      <div class="form-row justify-content-between align-items-center">
-        <div class="col-12 col-md-10">
-          <label class="sr-only" for="inlineFormInput">Name</label>
+      <div className="form-row justify-content-between align-items-center">
+        <div className="col-12 col-md-10">
+          <label className="sr-only" htmlFor="inlineFormInput">Name</label>
           <input type="text"
             className="form-control mb-2"
             id="inlineFormInputEpi"
@@ -37,7 +37,6 @@ function Filter({ handleChangeFilterAction }) {
   )
 }
 
+ 
 
-
-
-export default connect( { handleChangeFilterAction })(Filter)
+export default connect(null, { handleChangeFilterAction })(Filter)
