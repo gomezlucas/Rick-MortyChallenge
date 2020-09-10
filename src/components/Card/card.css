@@ -1,6 +1,6 @@
 
 
-.locationCard .card{
+.cardContainer .card{
     border-radius:0.5rem;
     border: none;
     transition: 0.3s all ease-in-out;
@@ -9,7 +9,7 @@
     }
     
     
-    .locationCard  button{
+    .cardContainer  button{
     border: 1px solid #F5F5F5F5;
     border-radius: 0.5rem;
     box-shadow: 0px 11px 21px #F5F5F5F5;
@@ -17,29 +17,29 @@
     
     }
     
-    .locationCard  button:hover{
+    .cardContainer  button:hover{
         box-shadow: 0px 11px 21px #3C3E44;
         
     }
     
-    .locationCard  .card-img-top{
+    .cardContainer  .card-img-top{
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
     }
     
-    .locationCard  button:hover .card{
+    .cardContainer  button:hover .card{
         transform: scale(1.1);
     }
     
     
-    .locationCard  .card-body {
+    .cardContainer  .card-body {
     transition: 0.3s all ease-in-out;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     font-weight: 700;
     }
     
-    .locationCard  button:hover .card-body {
+    .cardContainer  button:hover .card-body {
         color: #ffffff;
         background:  rgb(255, 152, 0);
         border-radius: 0.5rem;

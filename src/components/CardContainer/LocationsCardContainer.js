@@ -1,22 +1,23 @@
 import React from 'react'
-import LocationCard from './../LocationCard/LocationCard';
+import Card from '../Card/Card';
 import { connect } from 'react-redux'
 import Pagination from './../pagination/Pagination';
- import ModalLoc from './../modal/ModalLoc';
-import { closeModal } from '../../redux/locationsDuck'
+import ModalGen from './../modal/ModalGen';
+ import { closeModal, getLocationAction } from '../../redux/locationsDuck'
 import FilterLocation from './../filter/FilterLocation';
 
-function LocationCardContainer({ locations, closeModal,  location, showModal, fetching }) {
-     return (
+function LocationCardContainer({ locations, closeModal, location, showModal, getLocationAction,  fetching }) {
+    return (
         <div className="mx-4  flex-grow-1">
-             <ModalLoc
+            <ModalGen
+                type="location"
                 show={showModal}
                 location={location}
                 onHide={closeModal}
             />
             <FilterLocation />
 
-             {
+            {
                 fetching ? <h3> Loading ... </h3> :
                     <>
                         <div className="container-fluid">
@@ -28,12 +29,15 @@ function LocationCardContainer({ locations, closeModal,  location, showModal, fe
                                         </h3>
                                     </div>
                                     :
-                                    locations.map(location => {
-                                        return (
-                                            < LocationCard  {...location} />
-                                        )
-
-                                    })}
+                                    locations.map(location =>
+                                         <Card 
+                                        id={location.id} 
+                                        name={location.name} 
+                                        data={location.type} 
+                                        action={getLocationAction} 
+                                        />
+                                    )
+                                }
                             </div></div>
                         {locations.length > 0 && <Pagination />}
                     </>
@@ -53,4 +57,4 @@ function mapStateToProps(store) {
     }
 }
 
-export default connect(mapStateToProps, { closeModal })(LocationCardContainer)
+export default connect(mapStateToProps, { closeModal, getLocationAction })(LocationCardContainer)

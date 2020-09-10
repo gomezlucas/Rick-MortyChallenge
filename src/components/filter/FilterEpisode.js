@@ -4,7 +4,7 @@ import { handleChangeFilterAction } from '../../redux/episodesDuck'
 import './filter.css'
 
 
-function Filter({  handleChangeFilterAction }) {
+function Filter({ handleChangeFilterAction }) {
  
   function resetFilter(e) {
     e.preventDefault()
@@ -23,7 +23,7 @@ function Filter({  handleChangeFilterAction }) {
             id="inlineFormInputEpi"
             placeholder={"Search by Episode Name"}
             onChange={(e) => {
-                handleChangeFilterAction(e.target.value)
+              handleChangeFilterAction(e.target.value)
             }}
             aria-describedby="filter"
           />
@@ -32,7 +32,7 @@ function Filter({  handleChangeFilterAction }) {
           <button onClick={(e) => resetFilter(e)} className="btn filter__button mb-2">Reset</button>
         </div>
       </div>
- 
+
     </form>
   )
 }

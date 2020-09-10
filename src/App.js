@@ -1,6 +1,6 @@
 import React from 'react';
  import './App.css';
-import CardContainer from './components/CardContainer/CardContainer';
+import CharacterCardContainer from './components/CardContainer/CharacterCardContainer';
 import EpisodesCardContainer from './components/CardContainer/EpisodesCardContainer'
 import LocationsCardContainer from './components/CardContainer/LocationsCardContainer'
 import SideNavPage from './components/navbar/Navbar';
@@ -24,7 +24,7 @@ function App({ general,
     switch (general) {
       case 'characters':
         getCharactersAction()
-        return <CardContainer />
+        return <CharacterCardContainer />
       case 'episodes':
         getEpisodesAction()
         return <EpisodesCardContainer />

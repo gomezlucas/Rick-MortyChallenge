@@ -1,16 +1,17 @@
 import React from 'react'
 import { connect } from 'react-redux';
 import Pagination from './../pagination/Pagination';
-import EpisodeCard from './../EpisodeCard/EpisodeCard';
-import ModalEpi from './../modal/ModalEpi';
-import {closeModal} from '../../redux/episodesDuck'
-import FilterEpisode  from '../filter/FilterEpisode'
+import Card from '../Card/Card';
+import ModalGen from './../modal/ModalGen';
+import { closeModal, getEpisodeAction } from '../../redux/episodesDuck'
+import FilterEpisode from '../filter/FilterEpisode'
 
 
-function EpisodesCardContainer({ fetching, showModal, episodes, episode, closeModal }) {
+function EpisodesCardContainer({ fetching, showModal, episodes, episode, closeModal, getEpisodeAction }) {
     return (
         <div className="mx-4  flex-grow-1">
-            <ModalEpi
+            <ModalGen
+                type="episode"
                 show={showModal}
                 episode={episode}
                 onHide={closeModal}
@@ -28,12 +29,14 @@ function EpisodesCardContainer({ fetching, showModal, episodes, episode, closeMo
                                     </h3>
                                     </div>
                                     :
-                                    episodes.map(ep => {
-                                        return (
-                                            <EpisodeCard {...ep} />
-                                        )
-
-                                    })}
+                                    episodes.map(episode =>
+                                        <Card 
+                                        id={episode.id} 
+                                        name={episode.name} 
+                                        data={episode.episode} 
+                                        action={getEpisodeAction} 
+                                        />
+                                    )}
                             </div></div>
                         {episodes.length > 0 && <Pagination />}
                     </>
@@ -52,4 +55,4 @@ function mapStateToProps(store) {
     }
 }
 
-export default connect(mapStateToProps, {closeModal} )(EpisodesCardContainer)
+export default connect(mapStateToProps, { closeModal, getEpisodeAction })(EpisodesCardContainer)
