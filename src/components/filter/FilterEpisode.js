@@ -37,10 +37,7 @@ function Filter({ handleChangeFilterAction }) {
   )
 }
 
-function mapStateToProps(store) {
-  return {
-  }
-}
 
 
-export default connect(mapStateToProps, { handleChangeFilterAction })(Filter)
+
+export default connect( { handleChangeFilterAction })(Filter)
